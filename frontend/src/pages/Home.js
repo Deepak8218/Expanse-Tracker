@@ -62,7 +62,7 @@ function Home() {
 
     const fetchExpenses = async () => {
         try {
-            const url = `https://expanse-tracker-phi.vercel.app/expenses`;
+            const url = `${APIUrl}/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -86,7 +86,7 @@ function Home() {
 
     const addTransaction = async (data) => {
         try {
-            const url = `https://expanse-tracker-phi.vercel.app/expenses`;
+            const url = `${APIUrl}/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token'),
