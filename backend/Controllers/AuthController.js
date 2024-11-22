@@ -24,7 +24,6 @@ const signup = async (req, res) => {
             .json({
                 message: "Internal server errror",
                 success: false,
-                error: err
             })
     }
 }
@@ -63,7 +62,7 @@ const login = async (req, res) => {
             .json({
                 message: "Internal server errror",
                 success: false,
-                err
+                error: err
             })
     }
 }
