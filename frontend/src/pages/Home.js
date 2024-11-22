@@ -38,7 +38,7 @@ function Home() {
 
     const deleteExpens = async (id) => {
         try {
-            const url = `${APIUrl}/expenses/${id}`;
+            const url = `https://expanse-tracker-phi.vercel.app/expenses/${id}`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
